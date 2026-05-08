@@ -12,7 +12,7 @@ From: continuumio/miniconda3
     #git clone https://github.com/ELELAB/mutatex.git 
     git clone https://github.com/abotzki/mutatex.git 
     cd mutatex
-    python setup.py install
+    /opt/conda/envs/mutatex/bin/python setup.py install
 
 %environment
     export SINGULARITY_SHELL=/bin/bash

@@ -3,8 +3,9 @@
 #SBATCH --ntasks=1
 #SBATCH --cpus-per-task=4
 #SBATCH --time=1:00:00
-#SBATCH --output=build1.stdout
-#SBATCH --error=build1.stderr
+#SBATCH --mem=16GB
+#SBATCH --output=pull-from-docker.stdout
+#SBATCH --error=pull-from-docker.stderr
 
 # eventually load other modules
 #module purge
@@ -23,7 +24,7 @@ APPTAINER_TMPDIR=/tmp/ \
 apptainer build --fakeroot /tmp/$USER/tensorflow-23.06-tf2-py3.sif \
 docker://nvcr.io/nvidia/tensorflow:23.06-tf2-py3
 
-mv  /tmp/$USER/tensorflow-23.06-tf2-py3.sif $VSC_SCRATCH/apptainer-course/
+mv  /tmp/$USER/tensorflow-23.06-tf2-py3.sif $VSC_SCRATCH/apptainer/
 
 date
 echo End Job

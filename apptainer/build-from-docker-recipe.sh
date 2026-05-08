@@ -21,9 +21,9 @@ date
 
 APPTAINER_CACHEDIR=/tmp/ \
 APPTAINER_TMPDIR=/tmp/ \
-apptainer build --fakeroot /tmp/$USER/mutatex.sif $VSC_SCRATCH/containers-workshop/apptainer/mutatex.def
+apptainer build --fakeroot /tmp/mutatex.sif $VSC_SCRATCH/containers-workshop/apptainer/mutatex.def
 
-mv /tmp/$USER/mutatex.sif $VSC_SCRATCH/
+mv /tmp/mutatex.sif $VSC_SCRATCH/mutatex-v1.sif
 
 date
 echo End Job
