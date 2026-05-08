@@ -21,10 +21,11 @@ date
 
 APPTAINER_CACHEDIR=/tmp/ \
 APPTAINER_TMPDIR=/tmp/ \
-apptainer build --fakeroot /tmp/$USER/tensorflow-23.06-tf2-py3.sif \
-docker://nvcr.io/nvidia/tensorflow:23.06-tf2-py3
 
-mv  /tmp/$USER/tensorflow-23.06-tf2-py3.sif $VSC_SCRATCH/apptainer/
+apptainer build --fakeroot /tmp/$USER/fastqc-0.11.9.sif \
+docker://biocontainers/fastqc:v0.11.9_cv8
+
+mv /tmp/$USER/fastqc-0.11.9.sif $VSC_SCRATCH
 
 date
 echo End Job

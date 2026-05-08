@@ -1,0 +1,33 @@
+
+Recipe annotation
+
+```
+# Use the official Python image from the Docker Hub
+FROM python:3.9-slim
+
+# Set the working directory in the container
+WORKDIR /
+
+
+# Make port 8000 available to the world outside this container
+EXPOSE 8000
+
+# Run the HTTP server when the container launches
+CMD ["python", "-m", "http.server", "8000"]
+```
+
+Docker build
+
+```
+docker build -f exercises/Dockerfile.ports . -t my-http-server:version
+```
+
+Docker Run
+
+```
+docker run --detach -v ./:/workdir -w /workdir -p 8000:8000 my-http-server:version
+```
+
+
+Testing: http://localhost:8000/ 
+Should show some folders in your computer

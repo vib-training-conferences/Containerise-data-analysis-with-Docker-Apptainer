@@ -1,0 +1,31 @@
+INFO:    Starting build...
+INFO:    Fetching OCI image...
+INFO:    Extracting OCI image...
+INFO:    Inserting Apptainer configuration...
+INFO:    Copying stab-ddg-environment.yml to 
+INFO:    Running post scriptlet
++ /opt/conda/bin/conda env create -f stab-ddg-environment.yml
+
+
+==> WARNING: A newer version of conda exists. <==
+    current version: 25.3.1
+    latest version: 25.5.1
+
+Please update conda by running
+
+    $ conda update -n base -c defaults conda
+
+
++ echo . /opt/conda/etc/profile.d/conda.sh
++ head -n 1 stab-ddg-environment.yml
++ cut -f 2 -d  
++ echo conda activate stabddg
++ git clone https://github.com/LDeng0205/StaB-ddG.git
+Cloning into 'StaB-ddG'...
++ cd StaB-ddG
++ pip install -e .
+  DEPRECATION: Legacy editable install of stab_ddg==0.0.0 from file:///StaB-ddG (setup.py develop) is deprecated. pip 25.1 will enforce this behaviour change. A possible replacement is to add a pyproject.toml or enable --use-pep517, and use setuptools >= 64. If the resulting installation is not behaving as expected, try using --config-settings editable_mode=compat. Please consult the setuptools documentation for more information. Discussion can be found at https://github.com/pypa/pip/issues/11457
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.
+INFO:    Adding environment to container
+INFO:    Creating SIF file...
+INFO:    Build complete: /scratch/gent/449/vsc44947/stab-ddg.sif

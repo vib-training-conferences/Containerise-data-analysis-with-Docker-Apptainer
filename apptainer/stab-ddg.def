@@ -1,0 +1,19 @@
+Bootstrap: docker 
+From: continuumio/miniconda3 
+
+%files
+    stab-ddg-environment.yml
+
+%post
+    /opt/conda/bin/conda env create -f stab-ddg-environment.yml
+    echo ". /opt/conda/etc/profile.d/conda.sh" >> /etc/bash.bashrc
+    echo "conda activate $(head -n 1 stab-ddg-environment.yml | cut -f 2 -d ' ')" >> /etc/bash.bashrc
+    # clone mutatex
+    #git clone https://github.com/ELELAB/mutatex.git 
+    git clone https://github.com/LDeng0205/StaB-ddG.git 
+    cd StaB-ddG
+    pip install -e . 
+
+%environment
+    export SINGULARITY_SHELL=/bin/bash
+

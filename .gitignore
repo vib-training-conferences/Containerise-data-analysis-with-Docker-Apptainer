@@ -5,6 +5,7 @@ docs/_build/*
 # and the shell script to download the data. 
 data/*
 !data/downl-data.sh
+!data/example-code.ipynb
 
 results*
 

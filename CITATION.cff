@@ -1,0 +1,33 @@
+cff-version: 1.2.0
+message: "If you use this lesson, please cite it as below."
+authors:
+- given-names: Alexander
+  family-names: Botzki
+  affiliation: VIB
+  orcid: 0000-0001-6691-4233
+- given-names: Bruna
+  family-names: Piereck Moura
+  affiliation: VIB
+  orcid: 0000-0001-6691-4233
+contact:
+- given-names: Alexander
+  family-names: Botzki
+  affiliation: VIB
+  orcid: 0000-0001-6691-4233
+title: "Containerise data analysis with Docker & Apptainer"
+version: v1.0.0
+doi: ~
+date-released: 2025-08-10
+keywords:
+- Docker
+- Apptainer
+- Data Analysis
+- training material
+license: CC-BY
+repository-code: https://github.com/vib-tcp/containers-workshop/
+type: lesson
+abstract: "The container workshop will give an introduction to Docker & Apptainer, which are great components to achieve portability and reproducibility of your analysis. You will learn how to use containers and how to build a container from scratch, share it with others, and re-use and modify existing containers. After an extensive explanation on Docker containers, the Apptainer application, previously Singularity, and its use in the HPC will be highlighted as well. "
+identifiers:
+- type: url
+  value: https://github.com/vib-tcp/containers-workshop/
+  version: v2025.10

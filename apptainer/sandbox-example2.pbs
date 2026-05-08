@@ -5,23 +5,22 @@
 #SBATCH --time=1:00:00
 #SBATCH --output=build1.stdout
 #SBATCH --error=build1.stderr
-
 #module purge
 #module load Package1 Package2 Package3
 
 # go to the (current) working directory (optional, if this is the
 # directory where you submitted the job)
 
-cd /tmp
-mkdir /tmp/$USER
+cd $VSC_SCRATCH
+#mkdir /tmp/$USER
 echo Start Job
 date
 
-APPTAINER_CACHEDIR=/tmp/ \
-APPTAINER_TMPDIR=/tmp/ \
-apptainer build --fakeroot --sandbox /tmp/$USER/sandbox-ubuntu-1804 \
+APPTAINER_CACHEDIR=$VSC_SCRATCH \
+APPTAINER_TMPDIR=$VSC_SCRATCH \
+apptainer build --fakeroot --sandbox $VSC_SCRATCH/sandbox-ubuntu-1804 \
 docker://ubuntu:18.04
 
-mv  /tmp/$USER/sandbox-ubuntu-1804 $VSC_DATA/
+#mv  /tmp/$USER/sandbox-ubuntu-1804 $VSC_DATA/
 date
 echo End Job
