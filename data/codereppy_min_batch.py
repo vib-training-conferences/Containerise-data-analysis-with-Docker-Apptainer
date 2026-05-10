@@ -13,6 +13,12 @@ import seaborn as sns
 import plots as pe
 import models as mods
 import html_gen as hg
+import warnings
+
+warnings.filterwarnings(
+    "ignore",
+    message=".*is_categorical_dtype is deprecated.*",
+    category=FutureWarning)
 
 # Read and characterise data
 data_df = pd.read_csv("datasets/data.csv")
@@ -38,5 +44,12 @@ pe.createCountplot(data_df, xtickmarks)
 
 hg.html_img("Countplot", "coderep_countplot.png")
 
+print (" ")
+print ("image coderep_countplot.png was created")
+
 # Finish up the web page
 hg.end_html()
+
+print (" ")
+print ("end report.html is finished")
+print (" ")
