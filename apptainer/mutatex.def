@@ -1,15 +1,19 @@
 Bootstrap: docker 
 From: continuumio/miniconda3 
 
+%setup
+    mkdir -p ${APPTAINER_ROOTFS}/data
+
 %files
-    environment.yml
+    /data/gent/courses/2025/vibrepdata_EXT003/input/Containerise-data-analysis-with-Docker-Apptainer/apptainer/environment.yml /data/environment.yml
 
 %post
-    /opt/conda/bin/conda env create -f environment.yml
+    /opt/conda/bin/conda env create -f /data/environment.yml
     echo ". /opt/conda/etc/profile.d/conda.sh" >> /etc/bash.bashrc
-    echo "conda activate $(head -n 1 environment.yml | cut -f 2 -d ' ')" >> /etc/bash.bashrc
+    echo "conda activate $(head -n 1 /data/environment.yml | cut -f 2 -d ' ')" >> /etc/bash.bashrc
     # clone mutatex
     #git clone https://github.com/ELELAB/mutatex.git 
+    cd data
     git clone https://github.com/abotzki/mutatex.git 
     cd mutatex
     /opt/conda/envs/mutatex/bin/python setup.py install
