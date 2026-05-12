@@ -4,8 +4,10 @@
 #SBATCH --cpus-per-task=4
 #SBATCH --time=1:00:00
 #SBATCH --mem=16GB
-#SBATCH --output=pull-from-docker.stdout
-#SBATCH --error=pull-from-docker.stderr
+#SBATCH --output=pull-from-docker.%j.stdout
+#SBATCH --error=pull-from-docker.%j.stderr
+###SBATCH complete missing info
+###SBATCH complete missing info
 
 # eventually load other modules
 #module purge
@@ -29,3 +31,9 @@ mv /tmp/$USER/fastqc-0.11.9.sif $VSC_SCRATCH
 
 date
 echo End Job
+
+echo " "
+
+# Creating resources report
+echo "=== Report resources usage ==="
+sacct -j $SLURM_JOBID  --format=jobid,partition,elapsed,state,totalcpu,maxrss,averss
