@@ -1,0 +1,10 @@
+FROM ubuntu:18.04
+
+LABEL org.opencontainers.image.authors="training@vib.be"
+
+WORKDIR /
+
+RUN apt update && apt -y upgrade 
+RUN apt install -y wget && apt update
+
+ENTRYPOINT ["wget", "https://cdn-images-1.medium.com/max/1600/1*_NQN6_YnxS29m8vFzWYlEg.png"]

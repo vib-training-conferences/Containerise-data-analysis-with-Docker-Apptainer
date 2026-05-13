@@ -1,0 +1,2 @@
+Exercise 3:
+docker build -t analysispipeline:1.0.1 -f Dockerfile .

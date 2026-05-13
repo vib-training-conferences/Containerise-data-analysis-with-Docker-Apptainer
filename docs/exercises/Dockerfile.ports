@@ -1,0 +1,11 @@
+# what is it doing?
+FROM python:3.9-slim
+
+# what is it doing?
+WORKDIR /wordir
+
+# what is it doing?
+EXPOSE 8000
+
+# what is it doing?
+CMD ["python", "-m", "http.server", "8000"]
