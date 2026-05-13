@@ -1,8 +1,8 @@
 <!--
 
 author:   Alexander Botzki, Bruna Piereck
-email:    training@vib.de
-version:  1.0.0
+email:    trainingandconferences@vib.be
+version:  2.0.0
 language: en
 narrator: UK English Female
 
@@ -43,8 +43,8 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-tutor:    Introduction to Docker and Singularity
-edition:  5th 
+tutor:    Containerise data analysis with Docker & Apptainer
+edition:  6th 
 
 -->
 
@@ -63,14 +63,13 @@ This is the @edition edition of this workshop, jointly organised by VIB and ELIX
 
 ## General context
 
-This repository contains the materials (exercises) for the workshop on containers of May 20, 2021. We will focus on Docker and Singularity.
-Subsequent editions have taken place in January and October 2022 and March 2023, October 2023 and February 2024.
+This repository contains the materials (exercises) for the workshop on containers of May 11, 2026. We will focus on Docker and Singularity.
 
 Some exercises are inspired upon the examples from [Microsoft Azure ML github repo](https://github.com/Azure/azureml-examples). The content of this repo is licensed with MIT license.
 
 Other exercises are co-created with the [Code Reproducibility team of the ELIXIR network](https://github.com/elixir-europe-training/CodeReproducibility)
 
-The **presentations** which goes alongside this material can be found [in the Lesson overview: Slides](./presentations/docker_apptainer_workshop_20241015_v0.2.pdf) .
+The **presentations** which goes alongside this material can be found [in the Lesson overview: Slides](https://docs.google.com/presentation/d/19plMjGIyAQIviA8egS5lN9C56n_aph7EKU-EQ7KAA5s/edit?slide=id.p1#slide=id.p1) .
 
 ## Proposed Schedule
 
@@ -101,54 +100,6 @@ Schedule day 2:
 - 15:30 - 17:00 - session Singilarity recipes
 
 </section>
-
-```json   @JSONLD
-{
-  "@context": "https://schema.org/",
-  "@type": "LearningResource",
-  "@id": "https://elixir-europe-training.github.io/ELIXIR-TrP-TeSS/",
-  "http://purl.org/dc/terms/conformsTo": {
-    "@type": "CreativeWork",
-    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
-  },
-  "description": "Introduction to Docker and Apptainer",
-  "keywords": "Docker, Containers, Recipes, Singularity",
-  "name": "Introduction to Docker and Apptainer",
-  "license": "https://creativecommons.org/licenses/by/4.0/",
-  "educationalLevel": "beginner",
-  "competencyRequired": "none",
-  "teaches": [
-    "Define what containers are and articulate the differences between Docker and Singularity.",
-   "Identify the components of a Docker recipe and correlate with the layers within a Docker image.",
-   "List the benefits of containerization, considering reproducibility, usage and installation.",
-   "Recognize the use cases where Docker is the preferred method for deploying applications.",
-    "Discuss case studies to justify the selection of Docker or Singularity for specific deployment scenarios."
-  ],
-  "audience": "researchers",
-  "inLanguage": "en-US",
-  "learningResourceType": [
-    "tutorial"
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "name": "Bruna Piereck"
-    },
-    {
-      "@type": "Person",
-      "name": "Alexander Botzki"
-    }
-  ],
-  "contributor": [
-    {
-      "@type": "Person",
-      "name": "Christof De Bo"
-    }
-  ]
-}
-```
-
-
 
 # Lesson overview
 
@@ -253,3 +204,49 @@ The goal of VIB Technology Training is to up-skill life scientists to excel in t
 Authors: @[orcid(Alexander Botzki)](https://orcid.org/0000-0001-6691-4233), @[orcid(Bruna Piereck)](https://orcid.org/0000-0001-5958-0669)
 
 Technical Editors: Alexander Botzki
+
+
+```json   @JSONLD
+{
+  "@context": "https://schema.org/",
+  "@type": "LearningResource",
+  "@id": "https://elixir-europe-training.github.io/ELIXIR-TrP-TeSS/",
+  "http://purl.org/dc/terms/conformsTo": {
+    "@type": "CreativeWork",
+    "@id": "https://bioschemas.org/profiles/TrainingMaterial/1.0-RELEASE"
+  },
+  "description": "The course will give an introduction to containers (Docker & Apptainer) which are great components to achieve portability and reproducibility of your analysis.",
+  "keywords": "Docker, Containers, Recipes, Singularity, Apptainer",
+  "name": "Containerise data analysis with Docker & Apptainer",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "educationalLevel": "beginner",
+  "competencyRequired": "none",
+  "teaches": [
+    "Define what containers are and articulate the differences between Docker and Singularity.",
+   "Identify the components of a Docker recipe and correlate with the layers within a Docker image.",
+   "List the benefits of containerization, considering reproducibility, usage and installation.",
+   "Recognize the use cases where Docker is the preferred method for deploying applications.",
+    "Discuss case studies to justify the selection of Docker or Singularity for specific deployment scenarios."
+  ],
+  "audience": "researchers",
+  "inLanguage": "en-US",
+  "learningResourceType": [
+    "course materials"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "name": "Bruna Piereck"
+    },
+    {
+      "@type": "Person",
+      "name": "Alexander Botzki"
+    },
+    {
+      "@type": "Person",
+      "name": "Tuur Muyldermans"
+
+    }
+  ]
+}
+```
