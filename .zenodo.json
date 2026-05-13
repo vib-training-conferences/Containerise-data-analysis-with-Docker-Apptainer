@@ -1,13 +1,16 @@
 {
   "title": "Containerise data analysis with Docker & Apptainer",
-  "version": "v2025.10",
+  "version": "v2026.01",
   "license": "CC-BY",
   "upload_type": "lesson",
   "description": "<p>The container workshop will give an introduction to Docker & Apptainer, which are great components to achieve portability and reproducibility of your analysis. You will learn how to use containers and how to build a container from scratch, share it with others, and re-use and modify existing containers. After an extensive explanation on Docker containers, the Apptainer application, previously Singularity, and its use in the HPC will be highlighted as well.<\/p>",
   "keywords": [
     "Docker",
     "Apptainer",
-    "Data Analysis"
+    "Data Analysis",
+    "Singularity",
+    "HPC",
+    "Reproducibility"
   ],
   "access_right": "open",
   "language": "eng",
@@ -29,6 +32,13 @@
       "affiliation": "VIB",
       "orcid": "0000-0001-5958-0669",
       "type": "contactperson"
+    }
+    {
+      "name": "Tuur Muyldermans",
+      "affiliation": "",
+      "orcid": "0000-0002-3926-7293",
+      "type": "relatedperson"
+
     }
   ],
   "communities": [
