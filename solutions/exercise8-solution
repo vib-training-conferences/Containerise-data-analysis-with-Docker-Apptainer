@@ -1,2 +1,0 @@
-#from the cloned github course repository
-docker run -u="$(id -u):$(id -g)" --rm -v "$(pwd)"/data:/data -w="/data/" methplotlib methplotlib -m NA19240-methylation_ACTB_calls.tsv.gz NA19240-methylation_ACTB_frequency.tsv.gz -n calls frequencies -w chr7:5,525,542-5,543,028 -g GRCh38-ACTB-locus.gtf.gz --simplify -b DNase_cluster_ACTB.bed.gz
