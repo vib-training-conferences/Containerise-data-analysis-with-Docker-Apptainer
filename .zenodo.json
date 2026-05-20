@@ -38,12 +38,11 @@
       "affiliation": "",
       "orcid": "0000-0002-3926-7293",
       "type": "relatedperson"
-
     }
   ],
   "communities": [
     {
-      "identifier": "vibtcp"
+      "identifier": "vib-training-conferences"
     }
   ]
 }
