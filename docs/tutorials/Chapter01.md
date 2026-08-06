@@ -47,7 +47,7 @@ Containers differ from full virtual machines because they share the host operati
 
 ## Why this matters in practice
 
-A script may fail on another computer because:
+![Well, it works on my machine](https://github.com/vib-training-conferences/Containerise-data-analysis-with-Docker-Apptainer/blob/main/docs/images/settings_6541015.png?raw=true) A script may fail on another computer because:
 
 - the operating system is different;
 - the required library is missing;
@@ -62,7 +62,7 @@ A container reduces these problems by moving the software environment together w
 
 # 3. What is Docker?
 
-Docker is an open-source platform to create, manage and distribute containers. It popularised container technology by making it easier to build container images from recipes, run containers locally, and share images through registries such as Docker Hub [Merkel, 2014](https://doi.org/10.5555/2600239.2600241).
+A Docker is a person working a port, responsible for loading and unloading of containers. How is a Docker related to (bio)informatics? Docker is an open-source platform to create, manage and distribute containers. It popularised container technology by making it easier to build container images from recipes, run containers locally, and share images through registries such as Docker Hub [Merkel, 2014](https://doi.org/10.5555/2600239.2600241).
 
 In the Docker ecosystem, the most important concepts are:
 
@@ -73,6 +73,8 @@ In the Docker ecosystem, the most important concepts are:
 - **Registry**: a place where images can be stored and shared.
 
 These concepts are central to reproducible research because they make the software environment explicit and reusable [Nüst et al., 2020](https://doi.org/10.1371/journal.pcbi.1008316).
+
+Note: Use of Docker Desktop requires a paid subscription if it’s not purely educational.
 
 ---
 
