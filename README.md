@@ -2,7 +2,7 @@
 
 author:   Alexander Botzki, Bruna Piereck
 email:    training@vib.de
-version:  1.0.0
+version:  6.0.0
 language: en
 narrator: UK English Female
 
@@ -43,79 +43,32 @@ link:     https://raw.githubusercontent.com/vibbits/material-liascript/master/vi
 
 orcid:    [@0](@1)<!--class="orcid-logo-for-author-list"-->
 
-tutor:    Introduction to Docker and Singularity
-edition:  5th 
+tutor:    Containerise data analysis with Docker & Apptainer
+edition:  6th 
 
 -->
 
-# Introduction to Containers workshop
+# Containerise data analysis with Docker & Apptainer
 
-<section>
-
-Hello and welcome to our @tutor workshop! We are very happy to have you here.
-
-This is the @edition edition of this workshop, jointly organised by VIB and ELIXIR.
-
-> We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
-> It is a distributed way of creating and sharing educational content hosted on github.
-> To see this document as an interactive LiaScript rendered version, click on the
-> following link/badge: [LiaScript](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-tcp/containers-workshop/main/README.md)
-
-## General context
-
-This repository contains the materials (exercises) for the workshop on containers of May 20, 2021. We will focus on Docker and Singularity.
-Subsequent editions have taken place in January and October 2022 and March 2023, October 2023 and February 2024.
-
-Some exercises are inspired upon the examples from [Microsoft Azure ML github repo](https://github.com/Azure/azureml-examples). The content of this repo is licensed with MIT license.
-
-Other exercises are co-created with the [Code Reproducibility team of the ELIXIR network](https://github.com/elixir-europe-training/CodeReproducibility)
-
-The **presentations** which goes alongside this material can be found [in the Lesson overview: Slides](https://docs.google.com/presentation/d/19plMjGIyAQIviA8egS5lN9C56n_aph7EKU-EQ7KAA5s/edit?usp=sharing) .
-
-## Proposed Schedule
-
-Schedule day 1:
-
-- 9:30 - 11:00 - session Introduction to Docker
-- 11:00 - 11:15 - break
-- 11:15 - 12:45 - session Docker 
-   - Registries
-   - Running
-- 12:45 - 13:45 - lunch
-- 13:45 - 15:15 - session Docker 
-   - Mounts
-   - Ports
-- 15:15 - 15:30 - break
-- 15:30 - 17:00 - session Docker recipes
-   - Building
-
-Schedule day 2:
-
-- 9:30 - 11:00 - recap day 1 
-   - Bring the pieces together - exercise 5
-- 11:00 - 11:15 - break
-- 11:15 - 12:45 - session Introduction to Singularity
-- 12:45 - 13:45 - lunch
-- 13:45 - 15:15 - session Singularity on the HPC
-- 15:15 - 15:30 - break
-- 15:30 - 17:00 - session Singilarity recipes
-
-</section>
-
-# Lesson overview
+Lesson overview
+-----------------
 
 > <i class="fa fa-lock"></i> **License:** [Creative Commons Attribution 4.0 International  License](https://creativecommons.org/licenses/by/4.0/deed.en)
 >
-> <i class="fa fa-user"></i> **Target Audience:** Researchers
+> <i class="fa fa-user"></i> **Target Audience:** Researchers, Research-staff
 >
 > <svg xmlns="http://www.w3.org/2000/svg" height="14" width="16" viewBox="0 0 576 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M384 64c0-17.7 14.3-32 32-32H544c17.7 0 32 14.3 32 32s-14.3 32-32 32H448v96c0 17.7-14.3 32-32 32H320v96c0 17.7-14.3 32-32 32H192v96c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h96V320c0-17.7 14.3-32 32-32h96V192c0-17.7 14.3-32 32-32h96V64z"/></svg> **Level:** Beginner  
 >
 > <i class="fa fa-arrow-left"></i> **Prerequisites**  
-> To be able to follow this course, learners should have knowledge in:
+> To be able to follow this course, learners should:
 > 
-> 1. Knowledge of Command line Interface is a plus  
+> 1. Have basic command-line skills for bioinformatics workflows. If you lack command-line experience, you can prepare by following this [e-learning or Linux introduction](https://www.vibtrainingandconferences.be/events?f%5B0%5D=status%3Aupcoming&text=linux).
 >
-> <i class="fa fa-bookmark"></i> **Description** The course will give an introduction to containers (Docker & Apptainer) which are great components to achieve portability and reproducibility of your analysis. You will learn how to use containers and how to build a container from scratch, share it with others and how to re-use and modify existing containers. After an extensive explanation on Docker containers, the Apptainer application, previously Singularity, and its use in the HPC will be highlighted as well. 
+> 2. Have completed an [HPC course](https://www.vibtrainingandconferences.be/events?f%5B0%5D=event_type%3A11&f%5B1%5D=status%3Aupcoming&text=High+performance) if they do not have prior experience with High Performance Computing   
+>
+> <i class="fa fa-bookmark"></i> **Description** In this workshop, you will dive into container technologies - Docker and Apptainer - that enhance the portability and reproducibility of analysis workflows. You'll learn how to create containers from scratch, share them with others, and reuse or adapt existing ones. After an in-depth introduction to Docker, we will also explore Apptainer (formerly Singularity) and its application in High Performance Computing (HPC) environments. 
+>
+> The **presentations**, which goes alongside this material can be found in this [link](https://docs.google.com/presentation/d/19plMjGIyAQIviA8egS5lN9C56n_aph7EKU-EQ7KAA5s/edit?usp=sharing) in view-only format.
 > 
 > <i class="fa fa-arrow-right"></i> **Learning Outcomes:**  
 > By the end of the course, learners will be able to:
@@ -134,17 +87,22 @@ Schedule day 2:
 > 12. Develop Docker recipes and Singularity images tailored to the needs of different analysis pipelines. [Apply]
 > 13. Creating Singularity images based on Docker recipes for running in an HPC environment [Apply]
 >
->> Check more about [Bloom's taxonomy](https://cft.vanderbilt.edu/guides-sub-pages/blooms-taxonomy/) to categorize the levels in educational goals
->
 > <i class="fa fa-hourglass"></i> **Time estimation**: 480 minutes
 >
-> <i class="fa fa-asterisk"></i> **Requirements:** The (technical) installation requirements are described in the Chapters overview section Getting ready.
+> <i class="fa fa-asterisk"></i> **Requirements:** 
+> The (technical) installation requirements are described in the Chapters [Getting ready for the course](link).
 >
 > <i class="fa fa-envelope-open-text"></i> **Supporting Materials**:
 > 
-> 1. [Exercises and solutions](./docs/)
-> 2. [Slides files](./docs/presentations/)  
+> 1. [Exercises and solutions](./docs/exercises/)
+> 2. [Presentation files](./docs/presentations/)  
 > 
+> ## Proposed Schedule
+>
+> | Day 1 (9h30 - 17h00) | Day 2 (9h30 - 17h00) |
+> | :---  | :---  |
+> | <br> • Introduction to Docker as virtualisation environment <br> • Advantages of using containers & Typical use cases <br> • 12h45 - 13h45 : Lunch <br> • Using existing images <br> • Docker recipes: build your own image (part 1) | <br> • Docker recipes: build your own image (part 2) <br> • Introduction to Singularity <br> • 12h45 - 13h45 : Lunch <br> • Run and execute Singularity images on HPC <br> • Building Singularity images|
+>
 > <i class="fa fa-life-ring"></i> **Acknowledgement**:
 >
 > * [ELIXIR Belgium](https://www.elixir-belgium.org/)
@@ -153,25 +111,38 @@ Schedule day 2:
 > <i class="fa fa-money-bill"></i> **Funding:** This project has received funding from VIB.
 >
 > <i class="fa fa-anchor"></i> **PURL**:  https://zenodo.org/badge/DOI/10.5281/zenodo.14231766.svg
+>
+> ## Authors and Contributors
+>
+> Authors
+> 
+> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/cc-by-sa.png" width="20"/>](https://orcid.org/0000-0001-5958-0669) Bruna Piereck
+> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/cc-by-sa.png" width="20"/>](https://orcid.org/0000-0001-6691-4233) Alexander Botzki
+> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/cc-by-sa.png" width="20"/>](https://orcid.org/0000-0002-3926-7293) Tuur Muyldermans
+>
+> Contributors
+> 
+> We welcome contributors for these materials
+>
+> ## Citing this lesson
+>
+> Please cite as:
+>
+>  Botzki, A., Piereck Moura, B.& Muyldermans, T. (2026, January 15). Containerise data analysis with Docker & Apptainer. Zenodo. https://doi.org/10.5281/zenodo.18255499
+>
+> ## Chapter List
+>
+>| Chapter | Title                                                   |
+>| :---- | :------------------------------------------------         |
+>| 0     | [Get ready for the course, instalation and pre-reading](link) |
+>| 1     | [Chapter title](link)                                             |
 
+# Workshop and Material organization
 
-# Authors and Contributors
-
-Authors
-
-- [Bruna Piereck](@[orcid](https://orcid.org/0000-0001-5958-0669)
-- [Alexander Botzki](@[orcid](https://orcid.org/0000-0001-6691-4233)
-- [Tuur Muyldermans]([orcid](https://orcid.org/0000-0002-3926-7293)
-
-Contributors
-
-- we welcome contributors for these materials
-
-## Citing this lesson
-
-Please cite as:
-
-  Botzki, A., Piereck Moura, B.& Muyldermans, T. (2026, January 15). Containerise data analysis with Docker & Apptainer. Zenodo. https://doi.org/10.5281/zenodo.18255499
+> We are using the interactive Open Educational Resource online/offline course infrastructure called LiaScript.
+> It is a distributed way of creating and sharing educational content hosted on github.
+> To see this document as an interactive LiaScript rendered version, click on the
+> following link/badge: [LiaScript](https://liascript.github.io/course/?https://raw.githubusercontent.com/vib-tcp/training_material_template/main/README.md)
 
 # References
 
@@ -179,6 +150,8 @@ Here are some great tips for learning and to get inspired for your own use:
 
 * [slides by Melbourne Bioinformatics.org](https://www.melbournebioinformatics.org.au/tutorials/tutorials/docker/media/#1)
 * [Introduction by BioCore CRG](https://github.com/biocorecrg/ELIXIR_containers_nextflow)
+* Some exercises are inspired upon the examples from [Microsoft Azure ML github repo](https://github.com/Azure/azureml-examples). The content of this repo is licensed with MIT license.
+* Other exercises are co-created with the [Code Reproducibility team of the ELIXIR network](https://github.com/elixir-europe-training/CodeReproducibility)
 
 # About us
 
