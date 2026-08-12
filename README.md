@@ -171,7 +171,7 @@ Contributors
 
 Please cite as:
 
-  Botzki, A., & Piereck Moura, B. (2026, January 15). Containerise data analysis with Docker & Apptainer. Zenodo. https://doi.org/10.5281/zenodo.18255499
+  Botzki, A., Piereck Moura, B.& Muyldermans, T. (2026, January 15). Containerise data analysis with Docker & Apptainer. Zenodo. https://doi.org/10.5281/zenodo.18255499
 
 # References
 
