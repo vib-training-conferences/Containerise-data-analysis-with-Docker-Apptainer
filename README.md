@@ -110,7 +110,7 @@ Lesson overview
 >
 > <i class="fa fa-money-bill"></i> **Funding:** This project has received funding from VIB.
 >
-> <i class="fa fa-anchor"></i> **PURL**:  https://zenodo.org/badge/DOI/10.5281/zenodo.14231766.svg
+> <i class="fa fa-anchor"></i> **PURL**: [<img src="https://zenodo.org/badge/DOI/10.5281/zenodo.18255499.svg" width="200"/>](https://zenodo.org/records/18255499)
 >
 > ## Authors and Contributors
 >
