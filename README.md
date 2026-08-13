@@ -124,7 +124,7 @@ Lesson overview
 >
 > Contributors
 > 
-> We welcome contributors for these materials
+> **We welcome contributors for these materials**
 >
 > ## Citing this lesson
 >
