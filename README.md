@@ -116,9 +116,11 @@ Lesson overview
 >
 > Authors
 > 
-> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/cc-by-sa.png" width="20"/>](https://orcid.org/0000-0001-5958-0669) Bruna Piereck
-> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/cc-by-sa.png" width="20"/>](https://orcid.org/0000-0001-6691-4233) Alexander Botzki
-> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/cc-by-sa.png" width="20"/>](https://orcid.org/0000-0002-3926-7293) Tuur Muyldermans
+> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/ORCID-iD_icon_vector.svg" width="20"/>](https://orcid.org/0000-0001-5958-0669) Bruna Piereck
+> 
+> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/ORCID-iD_icon_vector.svg" width="20"/>](https://orcid.org/0000-0001-6691-4233) Alexander Botzki
+> 
+> [<img src="https://raw.githubusercontent.com/vib-training-conferences/training_material_template/refs/heads/main/docs/images/ORCID-iD_icon_vector.svg" width="20"/>](https://orcid.org/0000-0002-3926-7293) Tuur Muyldermans
 >
 > Contributors
 > 
