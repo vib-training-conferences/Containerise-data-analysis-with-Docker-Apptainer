@@ -6,9 +6,13 @@ authors:
   affiliation: VIB
   orcid: 0000-0001-6691-4233
 - given-names: Bruna
-  family-names: Piereck Moura
+  family-names: Piereck
   affiliation: VIB
   orcid: 0000-0001-6691-4233
+- given-names: Tuur 
+  family-names: Muyldermans
+  affiliation: VIB
+  orcid: 0000-0002-3926-7293
 contact:
 - given-names: Alexander
   family-names: Botzki
