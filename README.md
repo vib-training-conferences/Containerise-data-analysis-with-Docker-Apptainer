@@ -90,7 +90,7 @@ Lesson overview
 > <i class="fa fa-hourglass"></i> **Time estimation**: 480 minutes
 >
 > <i class="fa fa-asterisk"></i> **Requirements:** 
-> The (technical) installation requirements are described in the Chapters [Getting ready for the course](link).
+> The (technical) installation requirements are described in the Chapters [Getting ready](link).
 >
 > <i class="fa fa-envelope-open-text"></i> **Supporting Materials**:
 > 
