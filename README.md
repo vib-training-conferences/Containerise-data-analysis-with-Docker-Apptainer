@@ -137,7 +137,6 @@ Lesson overview
 >| Chapter | Title                                                   |
 >| :---- | :------------------------------------------------         |
 >| 0     | [Get ready for the course, instalation and pre-reading](link) |
->| 1     | [Chapter title](link)                                             |
 
 # Workshop and Material organization
 
