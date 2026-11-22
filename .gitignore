@@ -1,3 +1,7 @@
+# Mac
+.DS_Store
+docs/.DS_Store
+
 # Website related 
 docs/_build/*
 
