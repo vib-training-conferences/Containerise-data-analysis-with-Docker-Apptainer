@@ -95,7 +95,7 @@ Lesson overview
 > <i class="fa fa-envelope-open-text"></i> **Supporting Materials**:
 > 
 > 1. [Exercises and solutions](./docs/exercises/)
-> 2. [Presentation files](./docs/presentations/)  
+> 2. [Presentation files](https://github.com/vib-training-conferences/Containerise-data-analysis-with-Docker-Apptainer/blob/main/docs/presentations/20261123-Docker-Apptainer.pdf)  
 > 
 > ## Proposed Schedule
 >
