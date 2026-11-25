@@ -68,7 +68,7 @@ Lesson overview
 >
 > <i class="fa fa-bookmark"></i> **Description** In this workshop, you will dive into container technologies - Docker and Apptainer - that enhance the portability and reproducibility of analysis workflows. You'll learn how to create containers from scratch, share them with others, and reuse or adapt existing ones. After an in-depth introduction to Docker, we will also explore Apptainer (formerly Singularity) and its application in High Performance Computing (HPC) environments. 
 >
-> The **presentations**, which goes alongside this material can be found in this [link](https://docs.google.com/presentation/d/19plMjGIyAQIviA8egS5lN9C56n_aph7EKU-EQ7KAA5s/edit?usp=sharing) in view-only format.
+> The **presentations**, which goes alongside this material can be found in this [link](https://docs.google.com/presentation/d/1SpuFANqEmQQpciRgiNtp-GUbHluDWQBVacEOGve-Zcs/edit?usp=sharing) in view-only format.
 > 
 > <i class="fa fa-arrow-right"></i> **Learning Outcomes:**  
 > By the end of the course, learners will be able to:
@@ -95,7 +95,8 @@ Lesson overview
 > <i class="fa fa-envelope-open-text"></i> **Supporting Materials**:
 > 
 > 1. [Exercises and solutions](./docs/exercises/)
-> 2. [Presentation files](https://github.com/vib-training-conferences/Containerise-data-analysis-with-Docker-Apptainer/blob/main/docs/presentations/20261123-Docker-Apptainer.pdf)  
+> 2. [Presentation files](https://github.com/vib-training-conferences/Containerise-data-analysis-with-Docker-Apptainer/blob/main/docs/presentations/20261123-Docker-Apptainer.pdf)
+> 3. [Google slides view](https://docs.google.com/presentation/d/1SpuFANqEmQQpciRgiNtp-GUbHluDWQBVacEOGve-Zcs/edit?usp=sharing))
 > 
 > ## Proposed Schedule
 >
